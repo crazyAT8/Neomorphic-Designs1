@@ -1,0 +1,39 @@
+Assignment 
+    - make everything clickable
+    - get rid of the blinking carrot
+
+// Ui
+    - when clicked it sinks in 
+        and changes colors
+    - has to do something upon hover
+
+// Radio Buttons
+
+
+// Sliders
+    - need a bit of delay in the transition
+
+// Back     Play/Pause  Forwards
+    - have an onclick effect for the two arrows
+        and a hover effect
+    - when paused button needs to be sunk in
+        on play it needs to be raised
+
+// Search input
+    - needs a hover effect 
+    - onEnter the input needs to raise 
+
+// Button 
+    - needs to sink in when clicked 
+
+// Like
+    - needs to sink when pressed
+    - heart needs to be empty before any clicks
+        and filled out
+            indicating that you liked it 
+
+// Comment
+    - needs to sink when pressed
+    - modal needs to appear
+
+// Favorite
