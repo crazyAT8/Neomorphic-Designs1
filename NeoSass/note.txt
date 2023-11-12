@@ -1,0 +1,9 @@
+
+
+- to compile a sass file to css
+    run this command
+        'sass style.sass:style.css'
+
+- so you don't have to do that over and over 
+    run the prompt
+        'sass --watch style.sass:style.css'
