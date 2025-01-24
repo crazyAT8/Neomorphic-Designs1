@@ -1,0 +1,108 @@
+$main-color: #252120;
+$on-color: #D1FAD7;
+$button-border: 5px;
+
+body {
+    background:
+        linear-gradient(
+            -30deg,
+            darken($main-color, 3%) 0px,
+            lighten($main-color, 1%) 100%
+        );
+}
+
+main {
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    > div {
+        display: flex;
+
+        button {
+            display: block;
+            position: relative;
+            cursor: pointer;
+            background: linear-gradient($main-color, 1%);
+            border: solid $button-border transparent;
+            background-clip: padding-box;
+            border-radius: 100%;
+            padding: 1rem;
+            margin: 1.5rem;
+            box-shadow: 
+                -3px -3px 13px 3px lighten($main-color, 4%),
+                4px 4px 15px 6px darken($main-color, 9%);
+            
+            animation: depress 75ms linear;
+
+            i {
+                color: lighten($main-color, 20%);
+                text-shadow:
+                    -1px -1px darken($main-color, 15%),
+                    1px 1px lighten($main-color, 15%);
+            }
+
+            &.active {
+
+                > i {
+                    color: desaturate(darken($on-color, 35%), 50%);
+                }
+            }
+
+            &:active {
+                animation: press 50ms linear;
+                animation-fill-mode: forwards;
+            }
+
+            &:before {
+                content: '';
+                position: absolute;
+                z-index: -1;
+                top: 0; right: 0; bottom: 0; left: 0;
+                margin: -$button-border;
+                border: 1px solid lighten($main-color);
+                border-radius: inherit;
+            }
+
+            &:after {
+                content: '';
+                position: absolute;
+                z-index: -2;
+                top: 0; right: 0; bottom: 0; left: 0;
+                margin: -$button-border;
+                border-radius: inherit;
+                background: 
+                    linear-gradient(
+                        -30deg,
+                        lighten($main-color, 2%) 0%,
+                        darken($main-color, 2%) 100%
+                    );
+            }
+        }
+    }
+}
+
+@keyframes press {
+	100% {
+		box-shadow:
+			-1px -1px 10px 2px darken($color-primary, 7%),
+			3px 3px 10px 3px lighten($color-primary, 4%);
+	}
+}
+@keyframes depress {
+	0% {
+		box-shadow:
+			-1px -1px 10px 2px darken($color-primary, 7%),
+			3px 3px 10px 3px lighten($color-primary, 4%);
+	}
+	100% {
+		box-shadow:
+			7px 7px 20px 5px darken($color-primary, 8%),
+			-3px -3px 20px 3px lighten($color-primary, 12%);
+	}
+}
+
+// bla
+* { -webkit-tap-highlight-color: transparent; box-sizing: border-box; }
+button { outline: none; border: none; background: none; }

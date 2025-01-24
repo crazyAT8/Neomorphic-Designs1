@@ -1,0 +1,48 @@
+body {
+  background: linear-gradient(-30deg, #1d1a19 0px, #282322 100%);
+}
+
+main {
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+main > div {
+  display: flex;
+}
+main > div button {
+  display: block;
+  position: relative;
+  cursor: pointer;
+  background: linear-gradient(#252120, 1%);
+  border: solid 5px transparent;
+  background-clip: padding-box;
+  border-radius: 100%;
+  padding: 1rem;
+  margin: 1.5rem;
+  box-shadow: -3px -3px 13px 3px #302b29, 4px 4px 15px 6px #0c0b0b;
+  animation: depress 75ms linear;
+}
+main > div button i {
+  color: #5c524f;
+  text-shadow: -1px -1px black, 1px 1px #4e4643;
+}
+main > div button.active > i {
+  color: #69af74;
+}
+main > div button:active {
+  animation: press 50ms linear;
+  animation-fill-mode: forwards;
+}
+main > div button:before {
+  content: "";
+  position: absolute;
+  z-index: -1;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  margin: -5px;
+  border: 1px solid lighten;
+}/*# sourceMappingURL=style.css.map */

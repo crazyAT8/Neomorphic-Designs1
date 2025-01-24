@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Neumorphic Shapes</title>
+  <style>
+    /* Set background color for the entire page */
+    body {
+        margin: 0;
+        font-family: sans-serif;
+    }
+
+    /* Style for the container */
+    .min-h-screen {
+        min-height: 100vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 2rem;
+        background-color: #e6e9f0;
+    }
+
+    /* Flex container for shapes */
+    .flex-container {
+        display: flex;
+        gap: 2rem;
+        align-items: center;
+    }
+
+    /* Square styles */
+    .square {
+        width: 4rem;
+        height: 4rem;
+        background-color: #e6e9f0;
+        border-radius: 0.5rem;
+        box-shadow: 8px 8px 16px rgba(174, 174, 192, 0.4), -8px -8px 16px rgba(255, 255, 255, 0.6);
+    }
+
+    /* Circle styles */
+    .circle {
+        width: 4rem;
+        height: 4rem;
+        background-color: #e6e9f0;
+        border-radius: 50%;
+        box-shadow: 8px 8px 16px rgba(174, 174, 192, 0.4), -8px -8px 16px rgba(255, 255, 255, 0.6);
+    }
+  </style>
+</head>
+<body>
+  <div class="min-h-screen bg-light-gray flex-center">
+    <div class="flex-container">
+      <!-- First Square -->
+      <div class="square"></div>
+
+      <!-- Second Square -->
+      <div class="square"></div>
+
+      <!-- Circle -->
+      <div class="circle"></div>
+    </div>
+  </div>
+</body>
+</html>
