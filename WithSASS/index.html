@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="styles/main.css" />
+
+</head>
+<body>
+    <h1 class="emboss">Neumorphic Design</h1>
+
+    <section>
+        <h2 class="engrave">Shadow Types</h2>
+        <div>
+            <div class="shadow--outset">Outset</div>
+            <div class="shadow--inset">Inset</div>
+            <div class="shadow--raised">Raised</div>
+            <div class="shadow--sunken">Sunken</div>
+            <div class="shadow--ridge">Ridge</div>
+        </div>
+    </section>
+
+    <section>
+        <h2 class="engrave">Buttons</h2>
+        <div>
+            <button class="button">Default</button>
+            <button class="button button--raised">Raised</button>
+            <button class="button button--primary">Primary</button>
+            <button class="button button--pill">Pill</button>
+            <button class="button button--round">
+                <ion-icon name="heart" class="button__icon"></ion-icon>
+                <span class="sr-only">Round</span>
+            </button>
+            <button class="button button--square">
+                <ion-icon name="arrow-undo-outline" class="button__icon"></ion-icon>
+                <span class="sr-only">Round</span>
+            </button>
+            <button class="button button--pin">
+                <ion-icon name="add-outline" class="button__icon"></ion-icon>
+                <span class="sr-only">Pin</span>
+            </button>
+            <button class="button button--pin button--raised">
+                7
+                <span class="sr-only">Pin</span>
+            </button>
+        </div>
+    </section>
+
+    <section>
+        <h2 class="engrave">Text field</h2>
+        <div>
+            <label class="textfield">
+                <span class="sr-only">Search</span>
+                <div>
+                    <ion-icon name="search" class="textfield__icon"></ion-icon>
+                    <input type="search" placeholder="Search..." />
+                </div>
+            </label>
+            <label class="textfield">
+                <span class="sr-only">Name</span>
+                <div>
+                    <input type="text" placeholder="Name" />
+                </div>
+            </label>
+            <label class="textfield">
+                <span>Birthday</span>
+                <div>
+                    <input type="date" />
+                </div>
+            </label>
+            <label class="textfield">
+                <span>Flight time</span>
+                <div>
+                    <input type="time" />
+                </div>
+            </label>
+            <label class="textfield">
+                <span class="sr-only">Password</span>
+                <div>
+                    <input type="password" placeholder="Password" />
+                </div>
+            </label>
+        </div>
+    </section>
+
+    <section>
+        <h2 class="engrave">Checkbox, Radios & Switches</h2>
+        <div>
+            <label class="checkbox">
+                <span class="sr-only">Checkbox</span>
+                <input type="checkbox" class="checkbox__input" />
+                <span class="checkbox__checkmark"></span>
+            </label>
+            <label class="checkbox">
+                <span class="sr-only">Checkbox</span>
+                <input type="checkbox" class="checkbox__input" checked />
+                <span class="checkbox__checkmark"></span>
+            </label>
+            <label class="radio">
+                <span class="sr-only">Checkbox</span>
+                <input type="radio" class="radio__input" name="example" />
+                <span class="radio__checkmark"></span>
+            </label>
+            <label class="radio">
+                <span class="sr-only">Checkbox</span>
+                <input type="radio" class="radio__input" name="example" checked />
+                <span class="radio__checkmark"></span>
+            </label>
+            <label class="switch">
+                <span class="sr-only">Switch</span>
+                <input class="switch__input" type="checkbox" />
+                <span class="switch__slider"></span>
+            </label>
+            <label class="switch">
+                <span class="sr-only">Switch</span>
+                <input class="switch__input" type="checkbox" checked />
+                <span class="switch__slider"></span>
+            </label>
+            <label class="switch-alt">
+                <span class="sr-only">Switch</span>
+                <input class="switch-alt__input" type="checkbox" checked />
+                <span class="switch-alt__slider"></span>
+            </label>
+        </div>
+    </section>
+
+    <section>
+        <h2 class="engrave">Chips, Alerts & Tooltips</h2>
+        <div style="gap: 6rem;">
+            <div class="chip">
+                Neumorphic
+                <button class="chip__close">
+                    <ion-icon name="close-outline"></ion-icon>
+                </button>
+            </div>
+            <div class="tooltip tooltip--visible" style="width: 8rem;">
+                <span class="tooltip__text">Tooltip text</span>
+            </div>
+        </div>
+        <div>
+            <div class="alert" role="alert">
+                <ion-icon class="alert__icon" name="alert-outline"></ion-icon>
+                WARNING: Neumorphic design isn't very accessible
+                <button class="alert__close">
+                    <ion-icon name="close-outline"></ion-icon>
+                </button>
+            </div>
+        </div>
+    </section>
+
+    <section>
+        <h2 class="engrave">Sliders</h2>
+        <div>
+            <label class="slider tooltip" id="sliderExample">
+                <span class="tooltip__text"></span>
+                <span class="sr-only">Slider</span>
+                <input type="range" min="1" max="100" value="50" class="slider__input" />
+            </label>
+        </div>
+    </section>
+
+    <section>
+        <h2 class="engrave">Clocks</h2>
+        <div>
+            <div class="clock">
+                <div class="clock__marker"></div>
+                <div class="clock__marker"></div>
+                <div class="clock__marker"></div>
+                <div class="clock__marker"></div>
+                <div class="clock__center"></div>
+                <div class="clock__hand clock__hand--seconds"></div>
+                <div class="clock__hand clock__hand--minutes"></div>
+                <div class="clock__hand clock__hand--hours"></div>
+            </div>
+            <div class="clock-alt">
+                <span class="clock-alt__hours"></span>
+                :
+                <span class="clock-alt__minutes"></span>
+                :
+                <span class="clock-alt__seconds"></span>
+            </div>
+        </div>
+    </section>
+
+    <section>
+        <h2 class="engrave">Loaders</h2>
+        <div>
+            <div class="loader-1">
+                <div class="loader-1__dot"></div>
+                <div class="loader-1__dot"></div>
+                <div class="loader-1__dot"></div>
+            </div>
+            <div class="loader-2">
+                <div class="loader-2__dot"></div>
+                <div class="loader-2__dot"></div>
+                <div class="loader-2__dot"></div>
+            </div>
+            <div class="loader-3">
+                <div class="loader-3__dot"></div>
+                <div class="loader-3__dot"></div>
+                <div class="loader-3__dot"></div>
+            </div>
+            <div class="loader-4">
+                <div class="loader-4__dot"></div>
+                <div class="loader-4__dot"></div>
+                <div class="loader-4__dot"></div>
+            </div>
+        </div>
+        <div class="loader-5"></div>
+        <div class="loader-6"></div>
+    </section>
+
+    <section>
+        <h2 class="engrave">Blockquote</h2>
+        <div>
+            <blockquote class="quote">
+                Neumorphic design looks cool
+                <span> - Jack Domleo</span>
+            </blockquote>
+        </div>
+    </section>
+    
+    <script src="scripts/main.js"></script>
+</body>
+</html>
